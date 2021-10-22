@@ -102,8 +102,6 @@
                             data-parent="#accordionExample">
                             <div class="card-body">
                                 <!--#2# Task start -->
-
-
                                 <table id="example" class="display" style="width:100%">
                                     <thead>
                                         <tr>
@@ -128,6 +126,7 @@
                                                 <td>{{ $item1['email'] }}</td>
                                                 <td><a  class = "btn btn-danger" onclick="return confirm('Are you Sure?')" href={{ 'delete/' . $item1['id'] }}>Delete</a></td>
                                                 <td><a class = "btn btn-primary" href={{ 'weekedit/' . $item1['id'] }}>Edit</a></td>
+
                                             </tr>
                                         @endforeach
                                     </tbody>
